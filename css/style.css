@@ -69,7 +69,7 @@ nav{
   text-align: left;
 }
 
-footer{
+footer>p{
   background-color: black;
   color: white;
   padding-top: 30px;
@@ -104,6 +104,15 @@ footer{
 
 /*Your Code Here*/
 /* PLEASE DO NOT REMOVE MY COMMENTS.  THEY HELP US HELP YOU DEBUG. */
+nav ul {
+  padding: 25px 0 25px 0;
+  background-color: lightgray
+}
+
+
+main {
+  background-color: gray;
+}
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
@@ -116,7 +125,7 @@ li:nth-child(n):hover, li:nth-child(n):focus {
 
 .skip {
   position: absolute;
-  top: 40px;
+  top: -40px;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
@@ -145,7 +154,8 @@ li:nth-child(n):hover, li:nth-child(n):focus {
 first div in the grid  and place it in the grid. */
 
 div:first-child {
-  grid-column: 1 / span 3;
+  display: grid;
+  grid-column: 1 / span 5;
   background-image: url("../images/header.jpg");
 }
 
@@ -207,7 +217,9 @@ div:first-child {
 
  @media only screen and (min-width: 800px) {
 
-
+  nav ul {
+    text-align:right;
+  }
   /* Step 9: Write the selector/rule property to style the nav element */
 
   nav {
